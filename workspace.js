@@ -1188,6 +1188,26 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg-webcam", ["chilipeppr_ready"], f
                     });
                 }
             ); //End TinyG
+            
+            
+            // Inject new div to contain widget or use an existing div with an ID
+
+chilipeppr.load(
+  "#myDivWidgetCam",
+  "http://raw.githubusercontent.com/chilipeppr/widget-cam/master/auto-generated-widget.html",
+  function() {
+    // Callback after widget loaded into #myDivWidgetCam
+    // Now use require.js to get reference to instantiated widget
+    cprequire(
+      ["inline:com-chilipeppr-widget-cam"], // the id you gave your widget
+      function(myObjWidgetCam) {
+        // Callback that is passed reference to the newly loaded widget
+        console.log("Widget / Cam just got loaded.", myObjWidgetCam);
+        myObjWidgetCam.init();
+      }
+    );
+  }
+);
 
             // WebRTC Client com-chilipeppr-webrtcclient
             /*
