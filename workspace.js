@@ -1193,7 +1193,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg-webcam", ["chilipeppr_ready"], f
             // Inject new div to contain widget or use an existing div with an ID
 
 chilipeppr.load(
-  "#myDivWidgetCam",
+  "com-chilipeppr-mywebcam",
   "http://raw.githubusercontent.com/chilipeppr/widget-cam/master/auto-generated-widget.html",
   function() {
     // Callback after widget loaded into #myDivWidgetCam
@@ -1210,7 +1210,7 @@ chilipeppr.load(
 );
 
             // WebRTC Client com-chilipeppr-webrtcclient
-            /*
+            
             chilipeppr.load(
                 "com-chilipeppr-webrtcclient",
                 "http://fiddle.jshell.net/chilipeppr/qWj4f/show/light/",
@@ -1223,7 +1223,7 @@ chilipeppr.load(
                     webrtcclient.init();
                 });
             }); //End WebRTC Client
-            */
+            
 
         },
         //end loadWidgets
