@@ -1,4 +1,7 @@
+
 /* global cpdefine chilipeppr cprequire */
+
+
 cprequire_test(["inline:com-chilipeppr-workspace-tinyg"], function(ws) {
 
     console.log("initting workspace");
