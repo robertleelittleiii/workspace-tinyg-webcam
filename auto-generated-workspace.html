@@ -1423,6 +1423,26 @@ chilipeppr.load(
   }
 );
 
+// Inject new div to contain widget or use an existing div with an ID
+// $("body").append('<' + 'div id="myDivWidgetCncutilities"><' + '/div>');
+
+chilipeppr.load(
+  "#myDivWidgetCncutilities",
+  "http://raw.githubusercontent.com/robertleelittleiii/widget-template/master/auto-generated-widget.html",
+  function() {
+    // Callback after widget loaded into #myDivWidgetCncutilities
+    // Now use require.js to get reference to instantiated widget
+    cprequire(
+      ["inline:com-chilipeppr-widget-cncutilities"], // the id you gave your widget
+      function(myObjWidgetCncutilities) {
+        // Callback that is passed reference to the newly loaded widget
+        console.log("Widget / Template just got loaded.", myObjWidgetCncutilities);
+        myObjWidgetCncutilities.init();
+      }
+    );
+  }
+);
+
             // WebRTC Client com-chilipeppr-webrtcclient
             
             chilipeppr.load(
