@@ -589,7 +589,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg-webcam", ["chilipeppr_ready"], f
                         // if so, just activate
                         if (this.instance != null) {
                             console.log("activating " + this.name + " instead of re-instantiating cuz already created");
-                            // this.instance.activate();
+                             this.instance.activate();
                             // activate not used, but we may want to use it for loading the saved settings.        
                             //if (callback) callback(this.instance);
                         }
