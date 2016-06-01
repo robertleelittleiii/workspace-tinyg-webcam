@@ -312,7 +312,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg-webcam", ["chilipeppr_ready"], f
                 };
             }();
             this.font2gcodeObj.init();
-            //End Font2Gcode
+            //End Font2Gcode     
 
        this.cncUtilitiesObj = function() {
                 return {
