@@ -361,7 +361,7 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg-webcam", ["chilipeppr_ready"], f
                             // unhide
                             this.show();
                         }
-                        else {
+                        else { 
                             this.hide();
                         }
                     },
